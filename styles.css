@@ -1,0 +1,1036 @@
+/* --- VARIABILI E CONFIGURAZIONE GENERALE --- */
+:root {
+    --blu: #0f1c3f;
+    --blu-light: #1f3266;
+    --oro: #c5a880;
+    --bianco: #ffffff;
+    --grigio: #f7f8fc;
+    --testo: #5f6d8a;
+    --bg-tech: #ebdcc5; /* Colore beige/oro chiaro per staccare dal blu */
+
+    --colore-blu-scuro: var(--blu);
+    --colore-oro: var(--oro);
+    --colore-testo-scuro: var(--testo);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colore-testo-scuro);
+    background-color: var(--bianco);
+}
+
+/* --- 1. NAVBAR --- */
+.navbar-personalizzata {
+    background-color: var(--bianco) !important;
+    border-bottom: 1px solid rgba(15, 28, 63, 0.1);
+}
+
+.navbar-personalizzata .navbar-nav {
+    align-items: center;
+}
+
+.navbar-personalizzata .nav-link {
+    color: var(--colore-blu-scuro) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-personalizzata .nav-link:hover,
+.navbar-personalizzata .nav-link.active {
+    color: var(--colore-oro) !important;
+}
+
+.btn-nav-contatti {
+    background-color: var(--colore-blu-scuro) !important;
+    color: var(--bianco) !important;
+    border: none !important;
+    padding: 8px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 500;
+    transition: all 0.3s ease !important;
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-nav-contatti:hover {
+    background-color: var(--colore-oro) !important;
+    color: var(--colore-blu-scuro) !important;
+}
+
+.navbar-logo {
+    height: 45px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* --- 2. HERO SECTION --- */
+.hero-home {
+    min-height: auto; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;   
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #eef2fa;
+    color: var(--blu);
+    border-radius: 40px;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px; 
+}
+
+.hero-content h1 {
+    font-size: 3.9rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--colore-blu-scuro);
+}
+
+.hero-content h1 span {
+    color: var(--oro);
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: var(--testo);
+    line-height: 1.7;
+    max-width: 540px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* --- HERO IMMAGINE --- */
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 380px;
+    position: relative;
+    z-index: 3;
+    border-radius: 34% 66% 59% 41%/ 42% 36% 64% 58%;
+    box-shadow: 0 30px 60px rgba(15,28,63,.18);
+}
+
+/* --- 3. TECH STRIP --- */
+.tech-strip {
+    background: var(--bg-tech); 
+    padding: 28px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.tech-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-track div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--blu); 
+    font-weight: 600;
+    font-size: 1rem;
+    transition: .35s;
+}
+
+.tech-track div:hover {
+    color: var(--bianco);
+    transform: translateY(-3px);
+}
+
+.tech-track i {
+    font-size: 1.8rem;
+}
+
+/* --- 4. SEZIONE COMPETENZE --- */
+.sezione-competenze {
+    padding: 80px 0;
+    background-color: var(--colore-blu-scuro);
+}
+
+.scheda-competenza {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.03); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.scheda-competenza:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: var(--colore-oro);
+}
+
+.icona-competenza {
+    font-size: 2.5rem;
+    color: var(--colore-oro);
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* --- 5. SEZIONE ANTEPRIMA PORTFOLIO --- */
+.sezione-portfolio-anteprima {
+    padding: 80px 0;
+    background-color: var(--bianco);
+}
+
+.progetto-card {
+    border: 1px solid rgba(15, 28, 63, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--bianco);
+    box-shadow: 0 5px 20px rgba(15, 28, 63, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.progetto-card:hover {
+    transform: scale(1.02);
+    border-color: var(--colore-oro);
+    box-shadow: 0 10px 25px rgba(15, 28, 63, 0.1);
+}
+
+.progetto-card .card-img-top {
+    height: 220px !important;     
+    width: 100% !important;        
+    object-fit: cover !important;   
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px !important;
+}
+
+.img-chitarre { object-position: center center !important; }
+.img-csm { object-position: top center !important; }
+.img-museo { object-position: 0% 20% !important; }
+
+/* --- 6. CALL TO ACTION --- */
+.cta-home {
+    padding: 140px 0;
+    background: linear-gradient(135deg, var(--blu), #263d77);
+    color: var(--bianco);
+    position: relative;
+    overflow: hidden; 
+}
+
+.cta-box {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+}
+
+.cta-box h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 25px 0;
+    line-height: 1.2;
+}
+
+.cta-box p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: rgba(255,255,255,.85);
+}
+
+.cta-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-home .btn {
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: .35s;
+}
+
+.cta-home .btn:hover {
+    transform: translateY(-5px);
+}
+
+.section-label.light {
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(255,255,255,.12);
+    color: var(--bianco);
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* --- 7. FOOTER --- */
+.pie-di-pagina {
+    background: var(--blu);
+    color: var(--bianco);
+    padding: 70px 0 30px;
+    position: relative;
+}
+
+.pie-di-pagina h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pie-di-pagina p {
+    color: rgba(255,255,255,.75);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(255,255,255,.08);
+    color: var(--bianco);
+    font-size: 1.2rem;
+    transition: .35s;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    background: var(--oro);
+    color: var(--blu);
+    transform: translateY(-4px);
+}
+
+.copyright {
+    font-size: .9rem;
+    color: rgba(255,255,255,.6);
+}
+
+/* --- UTILITY SPECIFICHE --- */
+.btn-blu-pieno {
+    background-color: var(--colore-blu-scuro) !important;
+    border-color: var(--colore-blu-scuro) !important;
+    color: var(--bianco) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn-blu-pieno:hover {
+    background-color: var(--colore-oro) !important;
+    border-color: var(--colore-oro) !important;
+    color: var(--colore-blu-scuro) !important;
+}
+
+.btn-blu-outline {
+    color: var(--colore-blu-scuro) !important;
+    border-color: var(--colore-blu-scuro) !important;
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+}
+.btn-blu-outline:hover {
+    background-color: var(--colore-blu-scuro) !important;
+    color: var(--bianco) !important;
+}
+
+.testo-blu-scuro { color: var(--colore-blu-scuro) !important; }
+.testo-bianco { color: var(--bianco) !important; }
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 991.98px) {
+    .navbar-personalizzata .navbar-nav {
+        align-items: stretch;
+        text-align: center;
+    }
+    .btn-nav-contatti {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-image img {
+        width: 300px;
+    }
+    .cta-box h2 {
+        font-size: 2.2rem;
+    }
+    .footer-social {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    .hero-buttons, .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   CLASSI SPECIFICHE PER LA PAGINA PORTFOLIO (Differenziate con dicitura portfolio)
+   ========================================================================== */
+
+
+
+/* Intestazione specifica della pagina portfolio */
+.intestazione-pagina-portfolio {
+    padding: 60px 0 40px 0;
+    background-color: #ffffff;
+}
+
+/* Sezione contenitore della griglia portfolio */
+.sezione-portfolio {
+    padding: 20px 0 80px 0;
+    background-color: #ffffff;
+}
+
+/* Card specifiche del portfolio (Effetto hover con translateY invece di scale) */
+.progetto-card-portfolio {
+    border: 1px solid rgba(15, 28, 63, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(15, 28, 63, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.progetto-card-portfolio:hover {
+    transform: translateY(-5px) !important; 
+    border-color: var(--colore-oro);
+    box-shadow: 0 10px 25px rgba(15, 28, 63, 0.1);
+}
+
+/* UNIFORMITÀ ANTEPRIME: Forza le immagini della pagina portfolio a 220px come nella Home */
+.progetto-card-portfolio .card-img-top {
+    height: 220px !important;       /* Identica altezza della home */
+    width: 100% !important;        
+    object-fit: cover !important;   
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px !important;
+}
+
+/* Badge per i tag delle tecnologie - Specifici del portfolio */
+.badge-tecnologia-portfolio {
+    background-color: rgba(15, 28, 63, 0.06);
+    color: var(--colore-blu-scuro);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.img-grafica {
+            object-position: 0% 15% !important; 
+        }
+
+
+
+
+
+/* ==========================================================================
+   PAGINA DETTAGLIO CHITARRE
+   ========================================================================== */
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero-progetto-chitarre{
+    padding:60px 0 40px;
+    background:#fff;
+    border-bottom:1px solid rgba(15,28,63,.08);
+}
+
+.img-copertina-chitarre{
+    width:100%;
+    max-height:480px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:16px;
+    border:1px solid rgba(15,28,63,.10);
+    box-shadow:0 15px 40px rgba(15,28,63,.12);
+}
+
+
+/* ===========================
+   CONTENUTO
+=========================== */
+
+.sezione-contenuto-chitarre{
+    padding:60px 0 80px;
+    background:#fff;
+}
+
+
+/* ===========================
+   TITOLI
+=========================== */
+
+.titolo-sezione-chitarre{
+    font-size:1.75rem;
+    margin-bottom:1.25rem;
+    padding-bottom:8px;
+    position:relative;
+}
+
+.titolo-sezione-chitarre::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:40px;
+    height:3px;
+    background:var(--colore-oro);
+    border-radius:3px;
+}
+
+
+/* ===========================
+   TESTI
+=========================== */
+
+.testo-descrittivo-chitarre{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    color:var(--colore-testo-scuro);
+    opacity:.85;
+    line-height:1.8;
+    margin-bottom:2rem;
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.box-info-chitarre{
+    background:rgba(15,28,63,.02);
+    border:1px solid rgba(15,28,63,.08);
+    border-radius:16px;
+    padding:30px;
+    position:sticky;
+    top:30px;
+    box-shadow:0 8px 30px rgba(15,28,63,.03);
+}
+
+
+/* ===========================
+   LISTA INFO
+=========================== */
+
+.lista-info-chitarre{
+    list-style:none;
+    padding:0;
+    margin:0 0 1.5rem;
+}
+
+.lista-info-chitarre li{
+    padding:10px 0;
+    border-bottom:1px solid rgba(15,28,63,.06);
+    font-size:.95rem;
+}
+
+.lista-info-chitarre li:last-child{
+    border-bottom:none;
+}
+
+
+/* ===========================
+   BADGE
+=========================== */
+
+.badge-tech-chitarre{
+    display:inline-block;
+    padding:6px 14px;
+    margin-right:6px;
+    margin-bottom:8px;
+    border-radius:8px;
+    background:rgba(15,28,63,.06);
+    color:var(--colore-blu-scuro);
+    font-size:.8rem;
+    font-weight:500;
+    transition:.3s;
+}
+
+.badge-tech-chitarre:hover{
+    background:var(--colore-blu-scuro);
+    color:#fff;
+}
+
+
+/* ===========================
+   GALLERIA MOCKUP
+=========================== */
+
+.galleria-risultati-chitarre{
+    margin-top:2rem;
+}
+
+
+/* Card dei mockup */
+
+.box-mockup-chitarre {
+    height: 320px;
+    box-sizing: border-box; /* Assicura che il padding non aumenti i 320px totali */
+    padding: 5px 0;        /* Spazio di sicurezza sopra e sotto */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(15,28,63,.08);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 4px 12px rgba(15,28,63,.05);
+}
+
+.box-mockup-chitarre:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 24px rgba(15,28,63,.10);
+}
+
+
+/* ===========================
+   MOCKUP DESKTOP
+=========================== */
+
+.img-desktop-chitarre{
+    max-width:92%;
+    max-height:92%;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+}
+
+
+/* ===========================
+   MOCKUP MOBILE
+=========================== */
+
+.img-mobile-chitarre{
+    width:110px;
+    max-width:none;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 8px 20px rgba(15,28,63,.18));
+}
+
+
+/* ===========================
+   TESTO SOTTO LE CARD
+=========================== */
+
+.galleria-risultati-chitarre p{
+    margin-top:.9rem;
+    margin-bottom:0;
+    color:#6c757d;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+    .box-info-chitarre{
+        position:static;
+        margin-top:40px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .box-mockup-chitarre{
+        height:260px;
+    }
+
+    .img-mobile-chitarre{
+        width:140px;
+    }
+
+    .img-desktop-chitarre{
+        max-width:95%;
+        max-height:95%;
+    }
+
+}
+
+
+.box-video-chitarre{
+    margin-top:2rem;
+    padding:20px;
+    border:1px solid rgba(15,28,63,.08);
+    border-radius:16px;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(15,28,63,.05);
+}
+
+.video-desktop-chitarre{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   GALLERIA VOLANTINI
+=========================== */
+
+.box-volantino-chitarre {
+    height: 380px; /* Più alto dei mockup per ospitare la forma verticale dei volantini */
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(15,28,63,.08);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease;
+    box-shadow: 0 4px 12px rgba(15,28,63,.05);
+    cursor: pointer; /* Fa capire che è cliccabile */
+}
+
+.box-volantino-chitarre:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15,28,63,.10);
+}
+
+.img-volantino {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+
+/* Effetto zoom leggero sull'immagine quando si passa sopra con il mouse */
+.box-volantino-chitarre:hover .img-volantino {
+    transform: scale(1.02);
+}
+
+/* Stile per l'immagine a tutto schermo nel Modal */
+.img-fullscreen-gallery {
+    max-height: 85vh; /* Evita che l'immagine esca dallo schermo in altezza */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+}
+
+/* Ottimizzazione Mobile per i volantini */
+@media (max-width: 768px) {
+    .box-volantino-chitarre {
+        height: 320px; /* Riduce l'altezza sugli schermi piccoli */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Grafica.html */
+
+.img-copertina-grafica {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center 10%;
+    border-radius: 16px;
+    border: 1px solid rgba(15,28,63,.10);
+    box-shadow: 0 15px 40px rgba(15,28,63,.12);
+}
+
+ 
+
+
+
+
+
+
+/* Fotografia.html */
+/* ========================================================
+   CONTENITORI CATEGORIE (Box Blu con testo bianco centrato)
+   ======================================================== */
+
+.box-volantino-fotografia {
+    height: 380px; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centra il testo in orizzontale */
+    align-items: center;     /* Centra il testo in verticale */
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    
+    /* Configurazione sfondo blu e ombre nativa */
+    background: #0f1c3f; /* Colore blu scuro principale del brand */
+    border: 1px solid rgba(15, 28, 63, 0.15);
+    box-shadow: 0 4px 12px rgba(15, 28, 63, 0.08);
+    
+    /* Animazione fluida al passaggio del mouse */
+    transition: transform .3s ease, box-shadow .3s ease, background-color .3s ease;
+}
+
+/* Effetto Hover: il box si solleva e cambia leggermente tonalità */
+.box-volantino-fotografia:hover {
+    transform: translateY(-5px);
+    background: #162654; /* Sfumatura di blu leggermente più chiara per feedback */
+    box-shadow: 0 12px 28px rgba(15, 28, 63, 0.22);
+}
+
+/* Stile per il testo bianco al centro del box */
+.titolo-categoria-box {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+/* Badge per il conteggio delle foto in basso a destra */
+.conteggio-foto-badge {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+/* ========================================================
+   MODAL LIGHTBOX & STRUTTURA DI NAVIGAZIONE
+   ======================================================== */
+
+
+
+/* Immagine dentro il visualizzatore full screen */
+.img-fullscreen-gallery {
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Stile per le frecce di navigazione del modal */
+.freccia-gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.freccia-gallery:hover {
+    background: rgba(255, 255, 255, 0.3);
+    scale: 1.05;
+}
+
+.freccia-sinistra { left: 20px; }
+.freccia-destra { right: 20px; }
+
+/* ========================================================
+   RESPONSIVE (Ottimizzazione per Smartphone e Tablet)
+   ======================================================== */
+@media (max-width: 768px) {
+    .box-volantino-fotografia {
+        height: 280px; /* Riduce l'altezza su mobile per non allungare troppo la pagina */
+    }
+    
+    .titolo-categoria-box {
+        font-size: 1.3rem; /* Testo leggermente più piccolo sui display compatti */
+    }
+
+    .freccia-gallery {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .freccia-sinistra { left: 5px; }
+    .freccia-destra { right: 5px; }
+}
+
+
+/* Sfondo personalizzato che copre tutto lo schermo e intercetta il click */
+.modal-backdrop-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2; /* Sta dietro all'immagine e alle frecce, ma sopra il sito */
+    cursor: pointer;
+}
+
+/* Posizionamento perfetto per la X di chiusura */
+.pulsante-chiudi-gallery {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 20; /* Sempre in primissimo piano */
+    font-size: 1.25rem;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.pulsante-chiudi-gallery:hover {
+    opacity: 1;
+}
+
+/* Assicurati che il corpo del modal stia sopra lo sfondo del click */
+.modal-body.z-3 {
+    position: relative;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* faq.html */
+
+
+        /* Struttura personalizzata per la sezione FAQ */
+        .blocco-faq-blu {
+            background-color: var(--colore-blu-scuro);
+            border-radius: 16px;
+            padding: 50px 40px;
+        }
+
+        /* Reset stili nativi dell'accordion di Bootstrap per coordinarsi al blu e all'oro */
+        .accordion-personalizzato .accordion-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .accordion-personalizzato .accordion-button {
+            background-color: transparent;
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: none;
+            padding: 20px;
+        }
+
+        .accordion-personalizzato .accordion-button:not(.collapsed) {
+            color: var(--colore-oro);
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        /* Cambia il colore dell'icona a freccia di Bootstrap in bianco */
+        .accordion-personalizzato .accordion-button::after {
+            filter: invert(1) brightness(2);
+        }
+
+        .accordion-personalizzato .accordion-body {
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    
+
+
+

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografie - Dettaglio Progetto</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS (Fondamentale per i social e le icone di chiusura del modal) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-personalizzata sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo_sitopersonale.png" alt="Mariateresa Palumbo Logo" class="navbar-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigazionePrincipale" aria-controls="navigazionePrincipale" aria-expanded="false" aria-label="Attiva navigazione">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigazionePrincipale">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculum.html">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">Faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav-contatti" href="contatti.html">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HEADER & INTERFACCIA VISIVA HERO -->
+    <header class="hero-progetto-chitarre">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1 class="display-5 fw-bold testo-blu-scuro mb-2">Fotografia</h1>
+                <p class="lead text-muted">Scatti fotografici con attenzione alla composizione, Still Life e narrazione.</p>
+            </div>
+            <img src="img/anteprima_fotografia.jpg" class="img-copertina-chitarre img-fluid" alt="Foto Still Life">
+        </div>
+    </header>
+
+    <!-- CORPO CONTENUTI -->
+    <main class="sezione-contenuto-chitarre">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- COLONNA SINISTRA -->
+                <div class="col-lg-8">
+
+                    <!-- Cosa ho progettato -->
+                    <section class="mb-5">
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">Cosa ho progettato</h2>
+                        <p class="testo-descrittivo-chitarre">
+                            Ho realizzato degli scatti fotografici che seguissero con cura
+                            le regole di composizione. In particolare, mi sono esercitata nella
+                            regola dei terzi, la diagonale, la simmetria, centralità, colori complementari, 
+                            il controluce. Ho eseguito anche delle foto di Still Life con tecniche di 
+                            Light Painting: completamente al buio ho "disegnato" la luce sugli oggetti 
+                            con una torcia e ho scattato su cavalletto con un tempo di esposizione di 30 secondi.
+                            Infine, ho scattato delle foto che potessero raccontare una sessione di suono di chitarra
+                            acustica.
+                        </p>
+                    </section>
+
+                    <!-- Come l'ho realizzato -->
+                    <section class="mb-5">
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">Come l'ho realizzato</h2>
+                        <p class="testo-descrittivo-chitarre">
+                            Inizialmente, talvolta ho ricercato delle reference per trovare l'ispirazione.
+                            In seguito, ho utilizzato sia il cellulare sia la mia macchina fotografica Sony A7 ii.
+                            Infine, ho utilizzato Photoshop per ritoccare le foto e InDesign per realizzare delle tavole
+                            che mettero insieme i vari scatti.
+                        </p>
+                    </section>
+
+                    <!-- Risultato finale e Galleria -->
+                    <section>
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">Il Risultato finale</h2>
+                        <p class="testo-descrittivo-chitarre mb-4">
+                            Il risultato finale è costituito da 7 scatti di composizione, 3 di Still Life e 
+                            6 di narrazione.
+                        </p>
+
+                       <section class="mt-5">
+    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">Le Foto</h2>
+    <p class="testo-descrittivo-chitarre mb-4">
+        Seleziona una categoria per esplorare i relativi scatti a tutto schermo.
+    </p>
+
+<div class="row g-4">
+        <div class="col-md-4">
+            <div class="box-volantino-fotografia box-categoria-blu" 
+                 data-bs-toggle="modal" 
+                 data-bs-target="#galleryModal" 
+                 data-categoria="Composizione"
+                 data-immagini="img/composizione1.jpeg,img/composizione2.jpg,img/composizione3.jpg,img/composizione4.jpeg,img/composizione5.jpeg,img/composizione6.jpg,img/composizione7.jpeg">
+                
+                <span class="titolo-categoria-box">Composizione</span>
+                <div class="conteggio-foto-badge">7 Foto</div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box-volantino-fotografia box-categoria-blu" 
+                 data-bs-toggle="modal" 
+                 data-bs-target="#galleryModal" 
+                 data-categoria="Still Life"
+                 data-immagini="img/still_life1.jpg,img/still_life2.jpg,img/still_life3.jpg">
+                
+                <span class="titolo-categoria-box">Still Life</span>
+                <div class="conteggio-foto-badge">3 Foto</div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box-volantino-fotografia box-categoria-blu" 
+                 data-bs-toggle="modal" 
+                 data-bs-target="#galleryModal" 
+                 data-categoria="Narrazione"
+                 data-immagini="img/narrazione1.jpg,img/narrazione2.jpg,img/narrazione3.jpg,img/narrazione4.jpg,img/narrazione5.jpg,img/narrazione6.jpg">
+                
+                <span class="titolo-categoria-box">Narrazione</span>
+                <div class="conteggio-foto-badge">6 Foto</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl position-relative">
+        <div class="modal-content bg-transparent border-0">
+            
+            <div class="modal-backdrop-custom" data-bs-dismiss="modal"></div>
+            
+            <button type="button" class="btn-close btn-close-white pulsante-chiudi-gallery" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+            
+            <div class="modal-body p-0 text-center position-relative z-3">
+                <h4 id="modalTitle" class="text-white mb-3 fw-light opacity-75"></h4>
+                
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+                     id="modalImage" 
+                     class="img-fluid img-fullscreen-gallery" 
+                     alt="Elaborato Ingrandito" 
+                     data-bs-dismiss="modal"
+                     style="cursor: zoom-out;">
+                
+                <button type="button" class="freccia-gallery freccia-sinistra" id="prevBtn">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button type="button" class="freccia-gallery freccia-destra" id="nextBtn">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</div>
+
+<div class="col-lg-4">
+    <aside class="box-info-chitarre">
+        <h4 class="fw-bold testo-blu-scuro mb-4">Dettagli di Progetto</h4>
+
+        <ul class="lista-info-chitarre text-muted">
+            <li><strong class="testo-blu-scuro">Categoria:</strong> Scatti fotografici</li>
+            <li><strong class="testo-blu-scuro">Tipologia:</strong> Composizione, Still Life, Narrazione</li>
+            <li><strong class="testo-blu-scuro">Anno:</strong> 2025</li>
+        </ul>
+
+        <h4 class="fw-bold testo-blu-scuro mt-4 mb-3" style="font-size:1.15rem;">Strumenti Utilizzati</h4>
+
+        <div class="mb-4 d-flex flex-wrap gap-2">
+            <span class="badge-tech-chitarre">Sony A7 ii</span>
+            <span class="badge-tech-chitarre">Photoshop</span>
+            <span class="badge-tech-chitarre">InDesign</span>
+        </div>
+
+        <hr class="my-4" style="opacity:.1;">
+
+        <div class="d-grid">
+            <a href="portfolio.html" class="btn btn-blu-outline py-2">Torna al Portfolio</a>
+        </div>
+    </aside>
+</div>
+
+</div>
+</div>
+</main>
+
+    <footer class="pie-di-pagina">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <h3>Mariateresa Palumbo</h3>
+                    <p>Front-End Developer • Graphic Designer • Content Creator</p>
+                </div>
+
+                <div class="col-lg-6 text-lg-end">
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maripalumbo.it/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100085753847292" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="mailto:maripalumbo2001@gmail.com">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">© 2026 Mariateresa Palumbo. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let elencoImmagini = [];
+let indiceCorrente = 0;
+
+const galleryModal = document.getElementById('galleryModal');
+const modalImg = document.getElementById('modalImage');
+const modalTitle = document.getElementById('modalTitle');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+if (galleryModal) {
+    galleryModal.addEventListener('show.bs.modal', function (event) {
+        const boxCliccato = event.relatedTarget;
+        const categoria = boxCliccato.getAttribute('data-categoria');
+        const stringaImmagini = boxCliccato.getAttribute('data-immagini');
+        
+        elencoImmagini = stringaImmagini.split(',');
+        indiceCorrente = 0;
+
+        modalTitle.innerText = categoria;
+        mostraImmagine(indiceCorrente);
+    });
+
+    function mostraImmagine(index) {
+        if(elencoImmagini.length > 0) {
+            modalImg.src = elencoImmagini[index];
+        }
+    }
+
+    nextBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        indiceCorrente = (indiceCorrente + 1) % elencoImmagini.length;
+        mostraImmagine(indiceCorrente);
+    });
+
+    prevBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        indiceCorrente = (indiceCorrente - 1 + elencoImmagini.length) % elencoImmagini.length;
+        mostraImmagine(indiceCorrente);
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (!galleryModal.classList.contains('show')) return;
+        if (e.key === 'ArrowRight') nextBtn.click();
+        if (e.key === 'ArrowLeft') prevBtn.click();
+    });
+}
+</script>
+</body>
+</html>
+    
+    

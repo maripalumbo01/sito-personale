@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Il Mio Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-personalizzata sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo_sitopersonale.png" alt="Mariateresa Palumbo Logo" class="navbar-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigazionePrincipale" aria-controls="navigazionePrincipale" aria-expanded="false" aria-label="Attiva navigazione">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigazionePrincipale">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculum.html">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="faq.html">Faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav-contatti" href="contatti.html">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INTRODUZIONE / HERO -->
+    <header class="py-5 bg-light" style="border-bottom: 1px solid rgba(15, 28, 63, 0.05);">
+        <div class="container text-center text-lg-start">
+            <h1 class="display-4 fw-bold mb-3 testo-blu-scuro">FAQ</h1>
+            <p class="lead text-muted mb-0">
+                Hai dubbi sulle mie competenze, sui miei studi in Digital Humanities o su come possiamo collaborare? <br>
+                Qui sotto trovi le risposte alle domande che mi vengono rivolte più spesso.
+            </p>
+        </div>
+    </header>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <!-- Box Unico Blu Coordinato -->
+                    <div class="blocco-faq-blu shadow">
+                        <h2 class="h4 fw-bold text-white text-uppercase tracking-wider mb-4 titolo-sezione-chitarre">Domande Frequenti</h2>
+                        
+                        <!-- Inizio Accordion Bootstrap -->
+                        <div class="accordion accordion-personalizzato" id="accordionFaq">
+
+                            <!-- Domanda 1: Chi è il Digital Humanist -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingUno">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                                        Chi è e cosa fa un <span class="testo-oro-custom ms-1">Digital Humanist</span>?
+                                    </button>
+                                </h2>
+                                <div id="collapseUno" class="accordion-collapse collapse show" aria-labelledby="headingUno" data-bs-parent="#accordionFaq">
+                                    <div class="accordion-body">
+                                        Il <strong>Digital Humanist</strong> (o Umanista Digitale) è una figura professionale ibrida che fa da ponte tra la cultura umanistica e le nuove tecnologie. Non si occupa solo di programmazione o web design fine a se stesso, ma progetta sistemi, contenuti e interfacce digitali mettendo al centro la comunicazione, la cultura e l'esperienza dell'utente. Nel mio caso, unisco lo studio dei media alla produzione digitale creativa.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Domanda 2: Di cosa ti occupi nello specifico -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingDue">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDue" aria-expanded="false" aria-controls="collapseDue">
+                                        Quali servizi o competenze metti a disposizione per un progetto?
+                                    </button>
+                                </h2>
+                                <div id="collapseDue" class="accordion-collapse collapse" aria-labelledby="headingDue" data-bs-parent="#accordionFaq">
+                                    <div class="accordion-body">
+                                        Le mie competenze principali ruotano attorno a tre macro-aree:
+                                        <ul class="mt-2 mb-0 ps-3">
+                                            <li><strong>Web Design:</strong> Progettazione di interfacce grafiche su Figma e sviluppo di siti web utilizzando HTML, CSS, Bootstrap e WordPress.</li>
+                                            <li><strong>Video Editing &amp; Post-produzione:</strong> Montaggio di interviste, video promozionali e contenuti multimediali strutturati per i canali social con DaVinci Resolve.</li>
+                                            <li><strong>Grafica &amp; Content Creation:</strong> Ideazione di layout editoriali, fotoritocco e grafiche destinate ai canali digitali tramite la Suite Adobe (Photoshop, Illustrator, InDesign) e Canva.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NUOVA Domanda 3: Metodo di lavoro (Senza tempo) -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTre">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTre" aria-expanded="false" aria-controls="collapseTre">
+                                        Qual è il tuo metodo di lavoro per lo sviluppo di un progetto?
+                                    </button>
+                                </h2>
+                                <div id="collapseTre" class="accordion-collapse collapse" aria-labelledby="headingTre" data-bs-parent="#accordionFaq">
+                                    <div class="accordion-body">
+                                        Seguo un approccio strutturato diviso in tre fasi. Inizio con la <strong>ricerca e l'analisi</strong> delle necessità comunicative per raccogliere idee e definire lo stile. Successivamente passo alla <strong>progettazione visiva</strong>, creando bozze grafiche o prototipi su strumenti come Figma. Infine, mi occupo della <strong>produzione tecnica</strong> vera e propria, che sia lo sviluppo del codice web (HTML/CSS) o il montaggio e l'editing dei materiali video.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Domanda 4: Come collaborare / Contatti -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingQuattro">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuattro" aria-expanded="false" aria-controls="collapseQuattro">
+                                        Sei disponibile per lavori, collaborazioni freelance o progetti in team?
+                                    </button>
+                                </h2>
+                                <div id="collapseQuattro" class="accordion-collapse collapse" aria-labelledby="headingQuattro" data-bs-parent="#accordionFaq">
+                                    <div class="accordion-body">
+                                        Assolutamente sì! Sono sempre aperta a nuove opportunità lavorative, progetti stimolanti e collaborazioni con agenzie di comunicazione o studi grafici. Lavoro molto volentieri in team. Puoi scrivermi direttamente tramite la sezione <a href="contatti.html" class="testo-oro-custom text-decoration-none fw-bold">Contatti</a> o via mail a <em>maripalumbo2001@gmail.com</em>.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Fine Accordion -->
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie-di-pagina">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <h3>Mariateresa Palumbo</h3>
+                    <p>Front-End Developer • Graphic Designer • Content Creator</p>
+                </div>
+
+                <div class="col-lg-6 text-lg-end">
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maripalumbo.it/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100085753847292" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="mailto:maripalumbo2001@gmail.com">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">© 2026 Mariateresa Palumbo. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
