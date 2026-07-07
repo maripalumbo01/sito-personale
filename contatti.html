@@ -178,48 +178,48 @@
 
                 <!-- COLONNA DESTRA: Modulo di Contatto Compatto -->
                 <div class="col-lg-6">
-                    <div class="box-form-compatto shadow-sm">
-                        <h3 class="h5 fw-bold testo-blu-scuro mb-4">Scrivi un messaggio</h3>
-                        
-                        <!-- Form di Contatto -->
-                        <form action="#" method="POST">
-                            <div class="row g-3">
-                                
-                                <!-- Nome e Cognome -->
-                                <div class="col-md-6">
-                                    <label for="nome" class="form-label">Nome *</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Il tuo nome" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="cognome" class="form-label">Cognome *</label>
-                                    <input type="text" class="form-control" id="cognome" placeholder="Il tuo cognome" required>
-                                </div>
-
-                                <!-- Email -->
-                                <div class="col-12">
-                                    <label for="email" class="form-label">Indirizzo Email *</label>
-                                    <input type="email" class="form-control" id="email" placeholder="esempio@email.com" required>
-                                </div>
-
-                                <!-- Messaggio -->
-                                <div class="col-12">
-                                    <label for="messaggio" class="form-label">Messaggio *</label>
-                                    <textarea class="form-control" id="messaggio" rows="4" placeholder="Scrivi qui il tuo testo..." required></textarea>
-                                </div>
-
-                                <!-- Bottone di Invio Aggiornato -->
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-invia-personalizzato w-100 rounded">
-                                        Invia messaggio <i class="bi bi-send ms-2"></i>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </form>
-                        <!-- Fine Form -->
-                        
-                    </div>
+    <div class="box-form-compatto shadow-sm">
+        <h3 class="h5 fw-bold testo-blu-scuro mb-4">Scrivi un messaggio</h3>
+        
+        <!-- Form di Contatto collegato a Formspree -->
+        <form action="https://formspree.io/f/mrewveln" method="POST">
+            <div class="row g-3">
+                
+                <!-- Nome e Cognome -->
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome *</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Il tuo nome" required>
                 </div>
+                <div class="col-md-6">
+                    <label for="cognome" class="form-label">Cognome *</label>
+                    <input type="text" class="form-control" id="cognome" name="cognome" placeholder="Il tuo cognome" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-12">
+                    <label for="email" class="form-label">Indirizzo Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="esempio@email.com" required>
+                </div>
+
+                <!-- Messaggio -->
+                <div class="col-12">
+                    <label for="messaggio" class="form-label">Messaggio *</label>
+                    <textarea class="form-control" id="messaggio" name="message" rows="4" placeholder="Scrivi qui il tuo testo..." required></textarea>
+                </div>
+
+                <!-- Bottone di Invio -->
+                <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-invia-personalizzato w-100 rounded">
+                        Invia messaggio <i class="bi bi-send ms-2"></i>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+        <!-- Fine Form -->
+        
+    </div>
+</div>
 
             </div>
         </div>
