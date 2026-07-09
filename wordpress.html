@@ -1,17 +1,133 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito Web Trattoria - Dettaglio Progetto</title>
+    <title>Progetto Wordpress & Bootstrap | Mariateresa Palumbo</title>
+    <meta name="description" content="Case study del progetto web per una trattoria realizzato da Mariateresa Palumbo. Confronto pratico nello sviluppo responsive tra WordPress (Elementor) e codice Bootstrap.">
+    <link rel="canonical" href="https://www.mariateresapalumbo.it/wordpress.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.mariateresapalumbo.it/wordpress.html">
+    <meta property="og:title" content="Progetto Wordpress & Bootstrap | Mariateresa Palumbo">
+    <meta property="og:description" content="Siluppo con WordPress ed HTML/Bootstrap di un sito web responsive di una trattoria con sistema di prenotazione.">
+    <meta property="og:image" content="https://www.mariateresapalumbo.it/img/anteprima_trattoria.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.mariateresapalumbo.it/wordpress.html">
+    <meta property="twitter:title" content="Progetto Wordpress & Bootstrap | Mariateresa Palumbo">
+    <meta property="twitter:description" content="Siluppo con WordPress ed HTML/Bootstrap di un sito web responsive di una trattoria con sistema di prenotazione.">
+    <meta property="twitter:image" content="https://www.mariateresapalumbo.it/img/anteprima_trattoria.png">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
+
+    <!-- Dati Strutturati Schema.org (Modello avanzato ottimizzato) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.mariateresapalumbo.it/#person",
+          "name": "Mariateresa Palumbo",
+          "jobTitle": "Digital Humanist & Web Designer",
+          "url": "https://www.mariateresapalumbo.it",
+          "email": "maripalumbo2001@gmail.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/",
+            "https://www.instagram.com/maripalumbo.it/",
+            "https://www.facebook.com/profile.php?id=100085753847292"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Genova",
+            "addressRegion": "Liguria",
+            "addressCountry": "IT"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.mariateresapalumbo.it/#website",
+          "url": "https://www.mariateresapalumbo.it",
+          "name": "Mariateresa Palumbo",
+          "alternateName": "Mari palumbo",
+          "publisher": {
+            "@id": "https://www.mariateresapalumbo.it/#person"
+          },
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
+          "url": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
+          "caption": "Anteprima Progetto Web Trattoria - Mariateresa Palumbo",
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage",
+          "url": "https://www.mariateresapalumbo.it/wordpress.html",
+          "name": "Sito Web Trattoria - Dettaglio Progetto",
+          "datePublished": "2026-02-10T09:30:00+01:00",
+          "dateModified": "2026-07-09T14:50:00+02:00",
+          "isPartOf": {
+            "@id": "https://www.mariateresapalumbo.it/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png"
+          },
+          "description": "Case study del progetto web per una trattoria realizzato da Mariateresa Palumbo. Confronto pratico nello sviluppo responsive tra WordPress (Elementor) e codice Bootstrap.",
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://www.mariateresapalumbo.it/wordpress.html#creativework",
+          "name": "Sito Web Trattoria (WordPress vs Bootstrap)",
+          "author": {
+            "@id": "https://www.mariateresapalumbo.it/#person"
+          },
+          "creator": {
+            "@id": "https://www.mariateresapalumbo.it/#person"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Web Design"
+            },
+            {
+              "@type": "Thing",
+              "name": "WordPress Sviluppo"
+            },
+            {
+              "@type": "Thing",
+              "name": "Front-End Development"
+            }
+          ],
+          "genre": "Web Development",
+          "keywords": "WordPress, Elementor, Bootstrap, HTML5, CSS, Responsive, Trattoria Website",
+          "headline": "Progettazione d'interfaccia UI/UX e sviluppo front-end responsive per una trattoria",
+          "mainEntityOfPage": {
+            "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage"
+          },
+          "isPartOf": {
+            "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage"
+          },
+          "image": {
+            "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png"
+          },
+          "inLanguage": "it-IT"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
-    <!-- NAVBAR COPIATA DA image_4a859f.jpg (Incolla qui la tua navbar reale) -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-personalizzata sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo_sitopersonale.png" alt="Mariateresa Palumbo Logo" class="navbar-logo"></a>
@@ -33,194 +149,153 @@
                         <a class="nav-link" href="faq.html">Faq</a>
                     </li>
                     <li class="nav-item">
-                    <a class="btn btn-nav-contatti" href="contatti.html">Contatti</a>
+                        <a class="btn btn-nav-contatti" href="contatti.html">Contatti</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    
-    <!-- HEADER & INTERFACCIA VISIVA HERO -->
+    <!-- HEADER & HERO -->
     <header class="hero-progetto-chitarre">
         <div class="container">
             <div class="text-center mb-4">
                 <h1 class="display-5 fw-bold testo-blu-scuro mb-2">Sito Web per Trattoria</h1>
                 <p class="lead text-muted">Progettazione d'interfaccia UI/UX e sviluppo front-end responsive per una trattoria.</p>
             </div>
-            <!-- Immagine Mockup grande ripresa dall'anteprima in image_4a859f.jpg -->
             <img src="img/anteprima_trattoria.png" class="img-copertina-chitarre img-fluid" alt="Mockup Completo Trattoria">
         </div>
     </header>
 
-  <!-- CORPO CONTENUTI -->
-<main class="sezione-contenuto-chitarre">
-    <div class="container">
-        <div class="row g-5">
+    <!-- CORPO CONTENUTI -->
+    <main class="sezione-contenuto-chitarre">
+        <div class="container">
+            <div class="row g-5">
 
-            <!-- ===========================
-                 COLONNA SINISTRA
-            ============================ -->
-            <div class="col-lg-8">
+                <!-- COLONNA SINISTRA -->
+                <div class="col-lg-8">
 
-                <!-- Cosa ho progettato -->
-                <section class="mb-5">
-                    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
-                        Cosa ho progettato
-                    </h2>
+                    <!-- Cosa ho progettato -->
+                    <section class="mb-5">
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
+                            Cosa ho progettato
+                        </h2>
+                        <p class="testo-descrittivo-chitarre">
+                            Ho progettato da zero il sito web per una trattoria di fantasia in due versioni uguali,
+                            ma utilizzando da una parte Wordpress, mentre per la seconda versione HTML5, CSS, JS e BOOTSTRAP.
+                            L'obiettivo principale è stato verificare i limiti e i vantaggi dell'utilizzo di due teconologie differenti: 
+                            Bootstrap permette di personalizzare in maniera migliore il sito, mentre Wordpress consente di costruire 
+                            il sito in modo molto intuitivo. Mi sono focalizzata sul processo di prenotazione dei posti e ho ideato
+                            un'identità per la trattoria che ho messo in risalto tramite un layout minimale ed estetico.
+                        </p>
+                    </section>
 
-                    <p class="testo-descrittivo-chitarre">
-                        Ho progettato da zero il sito web per una trattoria di fantasia in due versioni uguali,
-                        ma utilizzando da una parte Wordpress, mentre per la seconda versione HTML5, CSS, JS e BOOTSTRAP.
-                        L'obiettivo principale è stato verificare i limiti e i vantaggi dell'utilizzo di due teconologie differenti: 
-                        Bootstrap permette di personalizzare in maniera migliore il sito, mentre Wordpress consente di costruire 
-                        il sito in modo molto intuitivo. Mi sono focalizzata sul processo di prenotazione dei posti e ho ideato
-                        un'identità per la trattoria che ho messo in risalto tramite un layout minimale ed estetico.
-                    </p>
-                </section>
+                    <!-- Come l'ho realizzato -->
+                    <section class="mb-5">
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
+                            Come l'ho realizzato
+                        </h2>
+                        <p class="testo-descrittivo-chitarre">
+                            Il flusso di lavoro si è diviso in due macrofasi.
+                            La prima ha riguardato lo studio della brand identity, 
+                            dei competitor e la stesura di sketch su carta e wireframe digitali del sito.
+                            Nella seconda fase, ho sviluppato su Wordpress il sito, utilizzando Elementor.
+                            Una volta ultimata la versione su Wordpress, ho ricreato lo stesso risultato attraverso
+                            Bootstrap.
+                        </p>
+                    </section>
 
-                <!-- Come l'ho realizzato -->
-                <section class="mb-5">
-                    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
-                        Come l'ho realizzato
-                    </h2>
+                    <!-- Risultato finale -->
+                    <section>
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
+                            Il Risultato finale
+                        </h2>
+                        <p class="testo-descrittivo-chitarre">
+                            Il risultato finale è un'esperienza web responsive con un sistema di prenotazione dei posti con una
+                            navigazione ottimizzata per smartphone e desktop.
+                            Ho realizzato dei mockup per far visualizzare il progetto al suo termine.    
+                        </p>
 
-                    <p class="testo-descrittivo-chitarre">
-                        Il flusso di lavoro si è diviso in due macrofasi.
-                        La prima ha riguardato lo studio della brand identity, 
-                        dei competitor e la stesura di sketch su carta e wireframe digitali del sito.
-                        Nella seconda fase, ho sviluppato su Wordpress il sito, utilizzando Elementor.
-                        Una volta ultimata la versione su Wordpress, ho ricreato lo stesso risultato attraverso
-                        Bootstrap.
-                    </p>
-                </section>
-
-                <!-- Risultato finale -->
-                <section>
-
-                    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
-                        Il Risultato finale
-                    </h2>
-
-                    <p class="testo-descrittivo-chitarre">
-                        Il risultato finale è un'esperienza web responsive con un sistema di prenotazione dei posti con una
-                        navigazione ottimizzata per smartphone e desktop.
-                        Ho realizzato dei mockup per far visualizzare il progetto al suo termine.    
-                    </p>
-
-                    <!-- Galleria -->
-                    <div class="row g-4 galleria-risultati-chitarre mt-3">
-
-                        <div class="col-md-6">
-                            <div class="text-center">
-
-                                <div class="box-mockup-chitarre">
-                                    <img src="img/Mockup%20desktop%20bootstrap.png"
-                                         class="img-desktop-chitarre"
-                                         alt="Desktop">
+                        <!-- Galleria -->
+                        <div class="row g-4 galleria-risultati-chitarre mt-3">
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <div class="box-mockup-chitarre">
+                                        <img src="img/Mockup-desktopbootstrap.png" class="img-desktop-chitarre" alt="Desktop">
+                                    </div>
+                                    <p class="small text-muted mt-2 mb-0">
+                                        Visualizzazione Desktop
+                                    </p>
                                 </div>
+                            </div>
 
-                                <p class="small text-muted mt-2 mb-0">
-                                    Visualizzazione Desktop
-                                </p>
-
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <div class="box-mockup-chitarre">
+                                        <img src="img/Mockup-IphoneBootstrap.png" class="img-mobile-chitarre" alt="Mobile">
+                                    </div>
+                                    <p class="small text-muted mt-2 mb-0">
+                                        Ottimizzazione Mobile-First
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                    </section>
 
-                        <div class="col-md-6">
-                            <div class="text-center">
+                    <!-- VIDEO -->
+                    <section class="mt-5">
+                        <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
+                            Demo del Progetto
+                        </h2>
+                        <div class="box-video-chitarre">
+                            <video class="video-desktop-chitarre" autoplay muted loop playsinline preload="metadata">
+                                <source src="video/trattoria.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </section>
 
-                                <div class="box-mockup-chitarre">
-                                    <img src="img/Mockup%20Iphone%20Bootstrap.png"
-                                         class="img-mobile-chitarre"
-                                         alt="Mobile">
-                                </div>
+                </div>
 
-                                <p class="small text-muted mt-2 mb-0">
-                                    Ottimizzazione Mobile-First
-                                </p>
+                <!-- COLONNA DESTRA -->
+                <div class="col-lg-4">
+                    <aside class="box-info-chitarre">
+                        <h3 class="fw-bold testo-blu-scuro mb-4" style="font-size: 1.5rem;">
+                            Dettagli di Progetto
+                        </h3>
 
-                            </div>
+                        <ul class="lista-info-chitarre text-muted">
+                            <li><strong class="testo-blu-scuro">Categoria:</strong> Sviluppo Web & UI/UX</li>
+                            <li><strong class="testo-blu-scuro">Tipologia:</strong> Trattoria </li>
+                            <li><strong class="testo-blu-scuro">Sviluppo:</strong> Mobile-First / Responsive</li>
+                            <li><strong class="testo-blu-scuro">Anno:</strong> 2026</li>
+                        </ul>
+
+                        <h3 class="fw-bold testo-blu-scuro mt-4 mb-3" style="font-size:1.15rem;">
+                            Strumenti Utilizzati
+                        </h3>
+
+                        <div class="mb-4">
+                            <span class="badge-tech-chitarre">Wordpress</span>
+                            <span class="badge-tech-chitarre">Bootstrap</span>
+                            <span class="badge-tech-chitarre">HTML5</span>
+                            <span class="badge-tech-chitarre">CSS</span>
                         </div>
 
-                    </div>
+                        <hr class="my-4" style="opacity:.1;">
 
-                </section>
-
-                <!-- VIDEO -->
-                <section class="mt-5">
-
-                    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
-                        Demo del Progetto
-                    </h2>
-
-                    <div class="box-video-chitarre">
-
-                        <video class="video-desktop-chitarre"
-                               autoplay
-                               muted
-                               loop
-                               playsinline
-                               preload="metadata">
-
-                            <source src="video/trattoria.mp4"
-                                    type="video/mp4">
-
-                        </video>
-
-                    </div>
-
-                </section>
+                        <div class="d-grid">
+                            <a href="portfolio.html" class="btn btn-blu-outline py-2">
+                                Torna al Portfolio
+                            </a>
+                        </div>
+                    </aside>
+                </div>
 
             </div>
-
-            <!-- ===========================
-                 COLONNA DESTRA
-            ============================ -->
-            <div class="col-lg-4">
-
-                <aside class="box-info-chitarre">
-
-                    <h4 class="fw-bold testo-blu-scuro mb-4">
-                        Dettagli di Progetto
-                    </h4>
-
-                    <ul class="lista-info-chitarre text-muted">
-                        <li><strong class="testo-blu-scuro">Categoria:</strong> Sviluppo Web & UI/UX</li>
-                        <li><strong class="testo-blu-scuro">Tipologia:</strong> Trattoria </li>
-                        <li><strong class="testo-blu-scuro">Sviluppo:</strong> Mobile-First / Responsive</li>
-                        <li><strong class="testo-blu-scuro">Anno:</strong> 2026</li>
-                    </ul>
-
-                    <h4 class="fw-bold testo-blu-scuro mt-4 mb-3"
-                        style="font-size:1.15rem;">
-                        Strumenti Utilizzati
-                    </h4>
-
-                    <div class="mb-4">
-                        <span class="badge-tech-chitarre">Wordpress</span>
-                        <span class="badge-tech-chitarre">Bootstrap</span>
-                        <span class="badge-tech-chitarre">HTML5</span>
-                        <span class="badge-tech-chitarre">CSS</span>
-                    </div>
-
-                    <hr class="my-4" style="opacity:.1;">
-
-                    <div class="d-grid">
-                        <a href="portfolio.html"
-                           class="btn btn-blu-outline py-2">
-                            Torna al Portfolio
-                        </a>
-                    </div>
-
-                </aside>
-
-            </div>
-
         </div>
-    </div>
-</main>
+    </main>
     
+    <!-- FOOTER -->
     <footer class="pie-di-pagina">
         <div class="container">
             <div class="row gy-4 align-items-center">
@@ -231,13 +306,13 @@
 
                 <div class="col-lg-6 text-lg-end">
                     <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/" target="_blank">
+                        <a href="https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/" target="_blank" rel="noopener">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="https://www.instagram.com/maripalumbo.it/" target="_blank">
+                        <a href="https://www.instagram.com/maripalumbo.it/" target="_blank" rel="noopener">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=100085753847292" target="_blank">
+                        <a href="https://www.facebook.com/profile.php?id=100085753847292" target="_blank" rel="noopener">
                             <i class="bi bi-facebook"></i>
                         </a>
                         <a href="mailto:maripalumbo2001@gmail.com">
