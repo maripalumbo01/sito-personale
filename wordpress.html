@@ -26,104 +26,138 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Dati Strutturati Schema.org (Modello avanzato ottimizzato) -->
-    <script type="application/ld+json">
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://www.mariateresapalumbo.it/#person",
-          "name": "Mariateresa Palumbo",
-          "jobTitle": "Digital Humanist & Web Designer",
-          "url": "https://www.mariateresapalumbo.it",
-          "email": "maripalumbo2001@gmail.com",
-          "sameAs": [
-            "https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/",
-            "https://www.instagram.com/maripalumbo.it/",
-            "https://www.facebook.com/profile.php?id=100085753847292"
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Genova",
-            "addressRegion": "Liguria",
-            "addressCountry": "IT"
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.mariateresapalumbo.it/#website",
-          "url": "https://www.mariateresapalumbo.it",
-          "name": "Mariateresa Palumbo",
-          "alternateName": "Mari palumbo",
-          "publisher": {
-            "@id": "https://www.mariateresapalumbo.it/#person"
-          },
-          "inLanguage": "it-IT"
-        },
-        {
-          "@type": "ImageObject",
-          "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
-          "url": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
-          "caption": "Anteprima Progetto Web Trattoria - Mariateresa Palumbo",
-          "inLanguage": "it-IT"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage",
-          "url": "https://www.mariateresapalumbo.it/wordpress.html",
-          "name": "Sito Web Trattoria - Dettaglio Progetto",
-          "datePublished": "2026-02-10T09:30:00+01:00",
-          "dateModified": "2026-07-09T14:50:00+02:00",
-          "isPartOf": {
-            "@id": "https://www.mariateresapalumbo.it/#website"
-          },
-          "primaryImageOfPage": {
-            "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png"
-          },
-          "description": "Case study del progetto web per una trattoria realizzato da Mariateresa Palumbo. Confronto pratico nello sviluppo responsive tra WordPress (Elementor) e codice Bootstrap.",
-          "inLanguage": "it-IT"
-        },
-        {
-          "@type": "CreativeWork",
-          "@id": "https://www.mariateresapalumbo.it/wordpress.html#creativework",
-          "name": "Sito Web Trattoria (WordPress vs Bootstrap)",
-          "author": {
-            "@id": "https://www.mariateresapalumbo.it/#person"
-          },
-          "creator": {
-            "@id": "https://www.mariateresapalumbo.it/#person"
-          },
-          "about": [
-            {
-              "@type": "Thing",
-              "name": "Web Design"
-            },
-            {
-              "@type": "Thing",
-              "name": "WordPress Sviluppo"
-            },
-            {
-              "@type": "Thing",
-              "name": "Front-End Development"
-            }
-          ],
-          "genre": "Web Development",
-          "keywords": "WordPress, Elementor, Bootstrap, HTML5, CSS, Responsive, Trattoria Website",
-          "headline": "Progettazione d'interfaccia UI/UX e sviluppo front-end responsive per una trattoria",
-          "mainEntityOfPage": {
-            "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage"
-          },
-          "isPartOf": {
-            "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage"
-          },
-          "image": {
-            "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png"
-          },
-          "inLanguage": "it-IT"
-        }
-      ]
+      "@type": "Person",
+      "@id": "https://www.mariateresapalumbo.it/#person",
+      "name": "Mariateresa Palumbo",
+      "jobTitle": "Digital Humanist & Web Designer",
+      "url": "https://www.mariateresapalumbo.it",
+      "email": "maripalumbo2001@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/mariateresa-palumbo-a292502a2/",
+        "https://www.instagram.com/maripalumbo.it/",
+        "https://www.facebook.com/profile.php?id=100085753847292"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cornigliano",
+        "postalCode": "16152",
+        "addressLocality": "Genova",
+        "addressRegion": "Liguria",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.mariateresapalumbo.it/#organization",
+      "name": "Mariateresa Palumbo",
+      "url": "https://www.mariateresapalumbo.it",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.mariateresapalumbo.it/#logo",
+        "url": "https://www.mariateresapalumbo.it/img/profilo_me.jpg"
+      },
+      "image": "https://www.mariateresapalumbo.it/img/profilo_me.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cornigliano",
+        "postalCode": "16152",
+        "addressLocality": "Genova",
+        "addressRegion": "Liguria",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.mariateresapalumbo.it/#website",
+      "url": "https://www.mariateresapalumbo.it",
+      "name": "Mariateresa Palumbo",
+      "alternateName": "Mari palumbo",
+      "publisher": {
+        "@id": "https://www.mariateresapalumbo.it/#organization"
+      },
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
+      "url": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
+      "caption": "Anteprima Progetto Web Trattoria - Mariateresa Palumbo",
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.mariateresapalumbo.it/wordpress.html#webpage",
+      "url": "https://www.mariateresapalumbo.it/wordpress.html",
+      "name": "Sito Web Trattoria - Dettaglio Progetto",
+      "datePublished": "2026-02-10T09:30:00+01:00",
+      "dateModified": "2026-07-09T21:44:00+02:00",
+      "isPartOf": {
+        "@id": "https://www.mariateresapalumbo.it/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png"
+      },
+      "description": "Case study del progetto web per una trattoria realizzato da Mariateresa Palumbo. Confronto pratico nello sviluppo responsive tra WordPress (Elementor) e codice Bootstrap.",
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.mariateresapalumbo.it/wordpress.html#article",
+      "headline": "Progettazione d'interfaccia UI/UX e sviluppo front-end responsive per una trattoria",
+      "description": "Case study del progetto web per una trattoria realizzato da Mariateresa Palumbo. Confronto pratico nello sviluppo responsive tra WordPress (Elementor) e codice Bootstrap.",
+      "datePublished": "2026-02-10T09:30:00+01:00",
+      "dateModified": "2026-07-09T21:44:00+02:00",
+      "mainEntityOfPage": "https://www.mariateresapalumbo.it/wordpress.html",
+      "image": "https://www.mariateresapalumbo.it/img/anteprima_trattoria.png",
+      "author": {
+        "@id": "https://www.mariateresapalumbo.it/#person"
+      },
+      "publisher": {
+        "@id": "https://www.mariateresapalumbo.it/#organization"
+      },
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.mariateresapalumbo.it/wordpress.html#wordpress",
+      "name": "WordPress & Elementor",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "publisher": {
+        "@type": "Organization",
+        "name": "WordPress Foundation"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.mariateresapalumbo.it/wordpress.html#bootstrap",
+      "name": "Bootstrap Framework",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bootstrap Core Team"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://www.mariateresapalumbo.it/wordpress.html#trattoriaweb",
+      "name": "Piattaforma Web Trattoria",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires HTML5 compatible browser",
+      "author": {
+        "@id": "https://www.mariateresapalumbo.it/#person"
+      }
     }
-    </script>
+  ]
+}
+</script>
 </head>
 <body>
 
