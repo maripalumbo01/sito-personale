@@ -303,30 +303,29 @@
 
                 </section>
 
-                <!-- VIDEO -->
-                <section class="mt-5">
+                <!-- VIDEO OTTIMIZZATO -->
+<section class="mt-5">
+    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
+        Demo del Progetto
+    </h2>
 
-                    <h2 class="titolo-sezione-chitarre fw-bold testo-blu-scuro">
-                        Demo del Progetto
-                    </h2>
-
-                    <div class="box-video-chitarre">
-
-                        <video class="video-desktop-chitarre"
-                               autoplay
-                               muted
-                               loop
-                               playsinline
-                               preload="metadata">
-
-                            <source src="video/Homechitarre.mp4"
-                                    type="video/mp4">
-
-                        </video>
-
-                    </div>
-
-                </section>
+    <div class="box-video-chitarre">
+        <video class="video-desktop-chitarre"
+               autoplay
+               muted
+               loop
+               playsinline
+               preload="auto">
+            
+            <!-- Il browser caricherà il WebM se supportato (più leggero e veloce) -->
+            <source src="video/Homechitarre.webm" type="video/webm">
+            <!-- Fallback in MP4 ottimizzato per i browser più vecchi -->
+            <source src="video/Homechitarre.webm" type="video/mp4">
+            
+            Il tuo browser non supporta il tag video.
+        </video>
+    </div>
+</section>
 
             </div>
 
