@@ -1033,3 +1033,25 @@ body {
 
 
 
+
+/* --- MOBILE CURRICULUM --- */
+/* --- FIX OVERFLOW MOBILE BLOCCO COMPETENZE --- */
+.blocco-competenze-blu {
+    background-color: var(--blu); /* Applica il blu scuro del tuo brand */
+    padding: 30px 20px;          /* Crea lo spazio interno corretto su mobile */
+    border-radius: 16px;         /* Arrotonda i bordi come da immagine */
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;            /* Impedisce a elementi interni di uscire */
+}
+
+/* Forza i testi lunghi delle certificazioni a spezzarsi e andare a capo */
+.blocco-competenze-blu ul li span {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    display: block;
+    width: 100%;
+}
+
+
+
