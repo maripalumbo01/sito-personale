@@ -67,6 +67,14 @@ body {
     color: var(--colore-blu-scuro) !important;
 }
 
+
+/* Stato attivo del pulsante Contatti quando si è sulla relativa pagina */
+.btn-nav-contatti.active {
+    background-color: var(--colore-oro) !important;
+    color: var(--colore-blu-scuro) !important;
+}
+
+
 .navbar-logo {
     height: 45px;
     width: auto;
