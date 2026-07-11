@@ -467,9 +467,8 @@ body {
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 6px;
-    margin-right: 5px;
-    margin-bottom: 5px;
     display: inline-block;
+    white-space: normal; /* Consente al testo del badge di andare a capo se lo schermo è molto stretto */
 }
 
 .img-grafica {
