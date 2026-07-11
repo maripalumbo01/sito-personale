@@ -1033,7 +1033,18 @@ body {
 
 
 
-
+/* CONTATTI */
+/* Impedisce alle icone tonde dei contatti di diventare ovali quando il testo va a capo */
+.icona-contatto-cerchio {
+    flex-shrink: 0;
+    width: 44px;  /* Modifica i px se desideri cerchi più grandi o piccoli */
+    height: 44px; /* Mantieni altezza e larghezza uguali per un cerchio perfetto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Garantisce la forma circolare */
+    background: rgba(15, 28, 63, 0.05); /* Grigio/blu chiaro di sfondo (opzionale, simile ai tuoi box) */
+}
 
 
 
