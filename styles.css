@@ -487,6 +487,166 @@ body {
 
 
 
+
+/* ==========================================================================
+   PAGINA curriculum
+   ========================================================================== */
+
+
+ 
+        /* Personalizzazione Stile Timeline e Layout Minimal senza Card */
+        .sezione-curriculum {
+            background-color: #ffffff;
+        }
+        
+        /* Linea verticale della timeline */
+        .timeline-linea {
+            position: relative;
+            border-left: 3px solid var(--colore-blu-scuro);
+            padding-left: 30px;
+            margin-left: 10px;
+        }
+
+        /* I blocchi della timeline */
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        /* I nodi/punti sulla linea */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 5px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 3px solid var(--colore-blu-scuro);
+        }
+
+        /* Punto color oro per evidenziare le attività correnti */
+        .timeline-item.attivo::before {
+            background-color: var(--colore-oro) !important;
+            border-color: var(--colore-oro) !important;
+        }
+
+        /* Sfondo Blu Esatto della Homepage per le Competenze */
+        .blocco-competenze-blu {
+            background-color: var(--colore-blu-scuro);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 40px 30px;
+        }
+
+        .blocco-competenze-blu h3 {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        /* Adattamento Badge dentro il blocco blu */
+        .blocco-competenze-blu .badge-tecnologia-portfolio {
+            background-color: rgba(255, 255, 255, 0.12) !important;
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.85rem;
+        }
+   
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   PAGINA contatti
+   ========================================================================== */
+
+
+  
+        /* Layout minimale e compatto per i Contatti */
+        .sezione-contatti {
+            background-color: #ffffff;
+        }
+
+        /* Box del Form pulito senza linea superiore */
+        .box-form-compatto {
+            border: 1px solid rgba(15, 28, 63, 0.08);
+            border-radius: 12px;
+            padding: 35px 30px;
+            background-color: #fafafa;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        /* Campi di input chiari con placeholder grigio chiaro */
+        .box-form-compatto .form-control {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            color: var(--colore-blu-scuro);
+            padding: 10px 14px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+        }
+
+        .box-form-compatto .form-control:focus {
+            border-color: var(--colore-oro);
+            box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.15);
+            background-color: #ffffff;
+            color: var(--colore-blu-scuro);
+        }
+
+        /* Testo di esempio (Placeholder) in grigietto */
+        .box-form-compatto .form-control::placeholder {
+            color: #a0a0a0 !important;
+            opacity: 1;
+        }
+
+        .box-form-compatto .form-label {
+            color: var(--colore-blu-scuro);
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        /* Nuovo Bottone: Sfondo Blu, Testo Bianco -> Hover Oro */
+        .btn-invia-personalizzato {
+            background-color: var(--colore-blu-scuro);
+            border: 1px solid var(--colore-blu-scuro);
+            color: #ffffff !important;
+            font-weight: 600;
+            padding: 10px 24px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-invia-personalizzato:hover {
+            background-color: var(--colore-oro);
+            border-color: var(--colore-oro);
+            color: var(--colore-blu-scuro) !important;
+        }
+
+        /* Icone cerchio colonna sinistra */
+        .icona-contatto-cerchio {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: rgba(15, 28, 63, 0.04);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--colore-blu-scuro);
+            font-size: 1.2rem;
+        }
+   
+
+
+
+
 /* ==========================================================================
    PAGINA DETTAGLIO CHITARRE
    ========================================================================== */
