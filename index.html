@@ -29,6 +29,8 @@
     <meta name="twitter:title" content="Mariateresa Palumbo | Digital Humanist & Web Designer">
     <meta name="twitter:description" content="Sito ufficiale di Mariateresa Palumbo, Umanista Digitale a Genova che unisce sviluppo web, grafica e comunicazione digitale.">
 
+    
+    
     <link rel="icon" href="img/favicon.png" type="image/png">
     
 <script type="application/ld+json">
@@ -104,7 +106,20 @@
 }
 </script>
     
-  
+    
+    
+  <!-- 1. Bootstrap CSS in locale (Risolve il blocco del rendering del CDN) -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 2. Precarica il font delle icone dal CDN (Risolve l'avviso del font invisibile) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 3. Icone Bootstrap dal CDN caricate in modo asincrono (Massima compatibilità e zero blocchi) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+    
+    <!-- 4. Il tuo foglio di stile personalizzato -->
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Script tracciamento e privacy caricati in modo asincrono deferito -->
     <script defer src="https://embeds.iubenda.com/widgets/c6013dd1-7133-4123-83e5-796165adba0d.js"></script>
@@ -118,23 +133,12 @@
     
    
     
-     <!-- 1. Bootstrap CSS in locale (Risolve il blocco del rendering del CDN) -->
-    <link href="bootstrap.min.css" rel="stylesheet">
     
-    <!-- 2. Precarica il font delle icone dal CDN (Risolve l'avviso del font invisibile) -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <!-- 3. Icone Bootstrap dal CDN caricate in modo asincrono (Massima compatibilità e zero blocchi) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
-    
-    <!-- 4. Il tuo foglio di stile personalizzato -->
-    <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-personalizzata sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-personalizzata sticky-top shadow-sm">
     <div class="container">
         <!-- Logo originale -->
         <a class="navbar-brand fw-bold" href="https://www.mariateresapalumbo.it/">
@@ -351,7 +355,7 @@
                         <a href="https://www.facebook.com/profile.php?id=100085753847292" target="_blank" aria-label="Profilo Facebook di Mariateresa Palumbo">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="mailto:maripalumbo2001@gmail.com" aria-label="Mail di Mariateresa Palumbo">
+                        <a href="mailto:info@mariateresapalumbo.it" aria-label="Mail di Mariateresa Palumbo">
                             <i class="bi bi-envelope-fill"></i>
                         </a>
                     </div>
