@@ -75,6 +75,7 @@ body {
 }
 
 
+
 .navbar-logo {
     height: 45px;
     width: auto;
@@ -388,15 +389,57 @@ body {
 
 /* --- RESPONSIVE BREAKPOINTS --- */
 @media (max-width: 991.98px) {
+    /* Sfondo blu scuro del menu mobile usando la tua variabile */
+    .bg-menu-mobile {
+        background-color: var(--colore-blu-scuro) !important;
+    }
+
+    /* Struttura verticale per centrare i link a tutto schermo */
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    /* Allineamento dei link all'interno del menu */
     .navbar-personalizzata .navbar-nav {
-        align-items: stretch;
+        align-items: center;
         text-align: center;
     }
-    .btn-nav-contatti {
-        margin-left: 0;
-        margin-top: 10px;
-        margin-bottom: 5px;
+
+    /* Spaziatura, dimensione e colore bianco per i link su mobile */
+    .bg-menu-mobile .link-mobile-white {
+        color: var(--bianco) !important;
+        font-size: 1.6rem;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
     }
+
+    /* Cambio colore all'hover sui link mobile */
+    .bg-menu-mobile .link-mobile-white:hover,
+    .bg-menu-mobile .link-mobile-white.active {
+        color: var(--colore-oro) !important;
+    }
+
+    /* Pulsante contatti invertito: sfondo bianco e testo blu per staccare dal fondo */
+    .bg-menu-mobile .btn-mobile-white {
+        margin-left: 0;
+        margin-top: 20px;
+        background-color: var(--bianco) !important;
+        color: var(--colore-blu-scuro) !important;
+        font-size: 1.3rem;
+        padding: 10px 30px !important;
+        border-radius: 8px !important;
+        width: auto;
+    }
+
+    .bg-menu-mobile .btn-mobile-white:hover,
+    .bg-menu-mobile .btn-mobile-white.active {
+        background-color: var(--colore-oro) !important;
+        color: var(--colore-blu-scuro) !important;
+    }
+}
     .hero-content h1 {
         font-size: 3rem;
     }
@@ -409,7 +452,7 @@ body {
     .footer-social {
         justify-content: flex-start;
     }
-}
+
 
 @media (max-width: 576px) {
     .hero-content h1 {
@@ -482,6 +525,9 @@ body {
 .img-grafica {
             object-position: 0% 15% !important; 
         }
+
+
+
 
 
 
@@ -643,6 +689,14 @@ body {
             font-size: 1.2rem;
         }
    
+
+
+
+
+
+
+
+
 
 
 
@@ -1201,6 +1255,7 @@ body {
 
 
 
+
 /* CONTATTI */
 /* Impedisce alle icone tonde dei contatti di diventare ovali quando il testo va a capo */
 .icona-contatto-cerchio {
@@ -1213,6 +1268,7 @@ body {
     border-radius: 50%; /* Garantisce la forma circolare */
     background: rgba(15, 28, 63, 0.05); /* Grigio/blu chiaro di sfondo (opzionale, simile ai tuoi box) */
 }
+
 
 
 
