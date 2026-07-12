@@ -7,7 +7,7 @@
     
     
     
-    <!-- SEO & SERPE Optimization -->
+    <!-- SEO & SERP Optimization -->
     <title>Progetto UI/UX E-Commerce Figma | Mariateresa Palumbo</title>
     <meta name="description" content="Case study del progetto di interfaccia UI/UX per l'E-Commerce di chitarre Guitar Land. Interfaccia responsive e prototipazione avanzata su Figma.">
     <meta name="keywords" content="UI UX design, Figma, E-Commerce chitarre, Web Design Genova, prototipazione responsive, Front-End Developer, Mariateresa Palumbo">
@@ -180,34 +180,50 @@
 </head>
 <body>
 
-    <!-- NAVBAR COPIATA DA image_4a859f.webp (Incolla qui la tua navbar reale) -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-personalizzata sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo_sitopersonale.webp" alt="Logo MP Mariateresa Palumbo - Digital Humanist e Web Designer Genova" class="navbar-logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigazionePrincipale" aria-controls="navigazionePrincipale" aria-expanded="false" aria-label="Attiva navigazione">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navigazionePrincipale">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-personalizzata sticky-top shadow-sm">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="/">
+            <img src="img/logo_sitopersonale.webp" alt="Logo MP Mariateresa Palumbo - Digital Humanist e Web Designer Genova" class="navbar-logo">
+        </a>
+        
+        <!-- Bottone Hamburger aggiornato per l'Offcanvas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navigazionePrincipale" aria-controls="navigazionePrincipale" aria-label="Attiva navigazione">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenitore Offcanvas a tutto schermo su mobile -->
+        <div class="offcanvas offcanvas-end w-100 bg-menu-mobile" tabindex="-1" id="navigazionePrincipale" aria-labelledby="navigazionePrincipaleLabel">
+            
+            <!-- Pulsante X di chiusura visibile solo su mobile -->
+            <div class="offcanvas-header justify-content-end d-lg-none">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- Corpo del menu con i link -->
+            <div class="offcanvas-body align-items-center">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium text-center w-100 justify-content-lg-end align-items-center">
+                    <li class="nav-item py-2 py-lg-0">
+                        <a class="nav-link link-mobile-white" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                    <li class="nav-item py-2 py-lg-0">
+                        <!-- Qui Portfolio è la pagina attiva -->
+                        <a class="nav-link active link-mobile-white" aria-current="page" href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="curriculum.html">Curriculum</a>
+                    <li class="nav-item py-2 py-lg-0">
+                        <a class="nav-link link-mobile-white" href="curriculum.html">Curriculum</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">Faq</a>
+                    <li class="nav-item py-2 py-lg-0">
+                        <a class="nav-link link-mobile-white" href="faq.html">Faq</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="btn btn-nav-contatti" href="contatti.html">Contatti</a>
+                    <li class="nav-item py-2 py-lg-0 ps-lg-3">
+                        <a class="btn btn-nav-contatti btn-mobile-white" href="contatti.html">Contatti</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
     
     
     <!-- HEADER & INTERFACCIA VISIVA HERO -->
