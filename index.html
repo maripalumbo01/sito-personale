@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it" prefix="og: https://ogp.me/ns#">
 <head>
-    <script defer type="text/javascript" src="https://embeds.iubenda.com/widgets/c6013dd1-7133-4123-83e5-796165adba0d.js"></script>
+    
     
     
     <meta charset="UTF-8">
@@ -10,6 +10,12 @@
     <meta name="description" content="Sito Portfolio di Mariateresa Palumbo, Digital Humanist junior a Genova specializzata in sviluppo front-end (HTML, CSS, Bootstrap), graphic design e content creation.">
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <link rel="canonical" href="https://www.mariateresapalumbo.it/">
+    
+    
+    <!-- Preload dell'immagine LCP (ritratto hero) per scaricarla subito -->
+    <link rel="preload" as="image" href="img/profilo_me.webp" fetchpriority="high">
+    
+    
     
     <!-- Open Graph per Social Media Preview (Ottimizzazione Indiretta richiesta) -->
     <meta property="og:locale" content="it_IT">
@@ -97,25 +103,29 @@
 }
 </script>
     
-    
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FH8F1QGST9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FH8F1QGST9');
-</script>
-    
-    
-    
-    
+  <!-- Fogli di stile (Mantenuti qui per evitare layout shift, ma ottimizzati) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Precarica il font delle icone per evitare il testo invisibile (Risolve l'avviso "Carattere visualizzato") -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-   
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Script tracciamento e privacy caricati in modo asincrono deferito -->
+    <script defer src="https://embeds.iubenda.com/widgets/c6013dd1-7133-4123-83e5-796165adba0d.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FH8F1QGST9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FH8F1QGST9');
+    </script>
+    
+   
+    
+    
+    
 </head>
 <body>
 
